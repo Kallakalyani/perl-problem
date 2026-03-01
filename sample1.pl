@@ -1,0 +1,26 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use feature 'say';
+say "enter the name";
+my $name=<STDIN>;
+chomp($name);
+my $vars=("hello" . $name);
+say "$vars";
+say "first number:";
+my $num1=<STDIN>;
+chomp($num1);
+say "second number:";
+my $num2=<STDIN>;
+chomp($num2);
+my $sum = $num1 + $num2;
+say "the sum is: $sum";
+my $diff = $num1 - $num2;
+say "the diff is: $diff";
+my $mul = $num1 * $num2;
+say "the multiple is: $mul";
+my $div = $num1 / $num2;
+say "the division is: $div";
+my $mod = $num1 % $num2;
+say "the modulus is: $mod";
+say "the multiplelines(print stop to finish):";
